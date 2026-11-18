@@ -8,7 +8,7 @@ import anthropic
 
 from .models import Scenario, Transcript, Turn
 
-DEFAULT_TARGET_MODEL = "claude-opus-5-5"
+DEFAULT_TARGET_MODEL = "claude-haiku-5-5"
 
 
 def _text_of(response: anthropic.types.Message) -> str:

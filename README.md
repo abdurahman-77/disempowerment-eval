@@ -29,8 +29,8 @@ disempowerment-eval/
 ```bash
 uv sync
 # Credentials: ANTHROPIC_API_KEY, or a profile from `ant auth login`
-uv run disempower-eval run                                   # all 9 scenarios, Opus 5.5 target and judge
-uv run disempower-eval run --target-model claude-sonnet-5-5 --samples 3
+uv run disempower-eval run                                   # all 9 scenarios, Haiku 5.5 target, Sonnet 5.5 judge
+uv run disempower-eval run --target-model claude-opus-5-5 --samples 3
 uv run disempower-eval run --only action_distortion,RD-02
 uv run disempower-eval report results/run-YYYYMMDD-HHMMSS    # re-render a saved run
 ```
